@@ -1,22 +1,23 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const LandingPage = () => {
   return (
-    <section class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <a
           href="#"
-          class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+          className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
           role="alert"
         >
-          <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">
+          <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">
             New
           </span>{" "}
-          <span class="text-sm font-medium">
+          <span className="text-sm font-medium">
             Streamx is out! See what's new
           </span>
           <svg
-            class="ml-2 w-5 h-5"
+            className="ml-2 w-5 h-5"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -28,21 +29,22 @@ const LandingPage = () => {
             ></path>
           </svg>
         </a>
-        <h1 class="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Elevate Your Streaming Experience with StreamX
         </h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           "Powerful, Customizable, and Seamless – The Next-Level Streaming Tool
           for Gamers, Creators, and Professionals"
         </p>
-        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-          <a
-            href="/stream"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+        <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <div className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900" >
+          <Link
+            to="/stream"
+            
           >
             Get Started
             <svg
-              class="ml-2 -mr-1 w-5 h-5"
+              className="ml-2 -mr-1 w-5 h-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -53,13 +55,16 @@ const LandingPage = () => {
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </a>
+          </Link>
+          </div>
+          
+          
           <a
             href="#"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
           >
             <svg
-              class="mr-2 -ml-1 w-5 h-5"
+              className="mr-2 -ml-1 w-5 h-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -69,15 +74,15 @@ const LandingPage = () => {
             Watch video
           </a>
         </div>
-        <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
-          <span class="font-semibold text-gray-400 uppercase">FEATURED IN</span>
-          <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+        <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+          <span className="font-semibold text-gray-400 uppercase">FEATURED IN</span>
+          <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
             <a
               href="#"
-              class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
+              className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
             >
               <svg
-                class="h-8"
+                className="h-8"
                 viewBox="0 0 132 29"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,10 +127,10 @@ const LandingPage = () => {
             </a>
             <a
               href="#"
-              class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
+              className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
             >
               <svg
-                class="h-11"
+                className="h-11"
                 viewBox="0 0 208 42"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,10 +151,10 @@ const LandingPage = () => {
             </a>
             <a
               href="#"
-              class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
+              className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
             >
               <svg
-                class="h-11"
+                className="h-11"
                 viewBox="0 0 120 41"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -175,17 +180,17 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div class="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white">
-        <div data-theme="teal" class="mx-auto max-w-6xl">
-          <h2 class="sr-only">Featured case study</h2>
-          <section class="font-sans text-black">
-            <div class="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ]">
-              <div class="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
-                <div class="h-full">
-                  <article class="h-full">
-                    <div class="h-full">
+      <div className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white">
+        <div data-theme="teal" className="mx-auto max-w-6xl">
+          <h2 className="sr-only">Featured case study</h2>
+          <section className="font-sans text-black">
+            <div className="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ]">
+              <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                <div className="h-full">
+                  <article className="h-full">
+                    <div className="h-full">
                       <img
-                        class="h-full object-cover"
+                        className="h-full object-cover"
                         src="https://www.streamingvideoprovider.com/assets_dist/svp/media/obs-scenes/obs-scenes-825.png"
                         width="733"
                         height="412"
@@ -196,19 +201,19 @@ const LandingPage = () => {
                   </article>
                 </div>
               </div>
-              <div class="p-6 bg-grey">
-                <div class="leading-relaxed">
-                  <h2 class="leading-tight text-4xl font-bold">
+              <div className="p-6 bg-grey">
+                <div className="leading-relaxed">
+                  <h2 className="leading-tight text-4xl font-bold">
                     Streamx: Experience Transformation
                   </h2>
-                  <p class="mt-4">
+                  <p className="mt-4">
                     StreamX brings you everything you need for flawless
                     broadcasting, from high-performance video encoding to
                     multi-platform streaming, custom layouts, and real-time
                     analytics. You’re in control of every aspect of your stream,
                     all from an intuitive and user-friendly interface.
                   </p>
-                  <p class="mt-4">
+                  <p className="mt-4">
                     Whether you're live streaming your favorite games,
                     conducting webinars, or building a creative studio, StreamX
                     provides the flexibility, control, and performance to take
@@ -218,7 +223,7 @@ const LandingPage = () => {
                   </p>
                   <p>
                     <a
-                      class="mt-4 button button--primary bg-primary-400"
+                      className="mt-4 button button--primary bg-primary-400"
                       href="#"
                     >
                       Try Streamx
@@ -230,27 +235,27 @@ const LandingPage = () => {
           </section>
         </div>
       </div>
-      <div class="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-20">
-        <div class="relative isolate overflow-hidden bg-white px-6 py-20 text-center sm:rounded-3xl sm:border sm:border-gray-100 sm:px-16 sm:shadow-sm">
-          <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-20">
+        <div className="relative isolate overflow-hidden bg-white px-6 py-20 text-center sm:rounded-3xl sm:border sm:border-gray-100 sm:px-16 sm:shadow-sm">
+          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Join our community today!
           </h2>
 
-          <h3 class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500">
+          <h3 className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500">
             Join our community of creators, streamers, and innovators who use
             StreamX every day. Share your knowledge, ask questions, and grow
             together.
           </h3>
 
-          <div class="mt-8 flex items-center justify-center gap-x-6">
+          <div className="mt-8 flex items-center justify-center gap-x-6">
             <a
-              class="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               href="/stream"
             >
               Explore Streamx
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -265,7 +270,7 @@ const LandingPage = () => {
 
           <svg
             viewBox="0 0 1024 1024"
-            class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
             aria-hidden="true"
           >
             <circle
