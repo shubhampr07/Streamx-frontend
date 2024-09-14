@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  
+    .button {
+      @apply px-5 py-2 inline-block text-lg font-bold border-2 duration-200 transition-colors ease-in-out;
+    }
+  
+    [data-theme="blue"] .button--secondary {
+      @apply bg-red border-red text-white hover:bg-white hover:text-red;
+    }
+  
+    [data-theme="purple"] .button--secondary {
+      @apply bg-orange border-orange text-purple hover:bg-white hover:text-purple hover:border-purple;
+    }
+  
+    [data-theme="teal"] .button--secondary {
+      @apply bg-pink border-pink text-white hover:bg-white hover:text-pink;
+    }
+  
+    .fancy-corners {
+      position: relative;
+      background-color: #fff;
+      transform-style: preserve-3d;
+    }
+  
+    .fancy-corners:after,
+    .fancy-corners:before {
+      position: absolute;
+      width: 8em;
+      height: 8em;
+      background-size: 100% 100%;
+      background-position: 0 0;
+      transform: translateZ(-1px);
+      z-index: -1;
+      @apply bg-purple;
+    }
+  
+    [data-theme="blue"] .fancy-corners:after,
+    [data-theme="blue"] .fancy-corners:before {
+      @apply bg-blue;
+    }
+  
+    [data-theme="teal"] .fancy-corners:after,
+    [data-theme="teal"] .fancy-corners:before {
+      @apply bg-teal;
+    }
+  
+    .fancy-corners[class*="--bottom"]:after,
+    .fancy-corners[class*="--top"]:before {
+      content: "";
+    }
+  
+    .fancy-corners--large[class*="--top"]:before {
+      top: -2.05882em;
+    }
+  
+    .fancy-corners--large[class*="--bottom"]:after {
+      bottom: -2.05882em;
+    }
+  
+    .fancy-corners--large[class*="--bottom"][class*="--bottom-right"]:after {
+      right: -2.05882em;
+    }
+  
+    .fancy-corners[class*="--bottom"]:after {
+      bottom: -1.17647em;
+    }
+  
+    .fancy-corners[class*="--bottom"][class*="--bottom-right"]:after {
+      right: -1.17647em;
+    }
+  
+    .fancy-corners[class*="--top"]:before {
+      top: -1.17647em;
+    }
+  
+    .fancy-corners[class*="--top"][class*="--top-left"]:before {
+      left: -1.17647em;
+    }
+  
+    .fancy-corners--top-left:before {
+      -webkit-mask-image: linear-gradient(-45deg, #fff 85.5%, transparent 0);
+      mask-image: linear-gradient(-45deg, #fff 85.5%, transparent 0);
+    }
+  
+    .fancy-corners--bottom-right:after {
+      -webkit-mask-image: linear-gradient(-45deg, transparent 14.5%, #fff 0);
+      mask-image: linear-gradient(-45deg, transparent 14.5%, #fff 0);
+    }
+  
+    @screen lg {
+      .fancy-corners--large:after,
+      .fancy-corners--large:before {
+        width: 14em;
+        height: 14em;
+      }
+  
+      .fancy-corners--large[class*="--top"][class*="--top-left"]:before {
+        left: -2.05882em;
+      }
+  
+      .fancy-corners--large[class*="--top"]:before {
+        top: -2.05882em;
+      }
+  
+      .fancy-corners--large[class*="--bottom"]:after {
+        bottom: -2.05882em;
+      }
+  
+      .fancy-corners--large[class*="--bottom"][class*="--bottom-right"]:after {
+        right: -2.05882em;
+      }
+    }
+  }
+  
+  @layer utilities {
+    @responsive {
+      .flex-basis-10 {
+        flex-basis: 10%;
+      }
+      .flex-basis-20 {
+        flex-basis: 20%;
+      }
+      .flex-basis-30 {
+        flex-basis: 30%;
+      }
+      .flex-basis-40 {
+        flex-basis: 40%;
+      }
+      .flex-basis-50 {
+        flex-basis: 50%;
+      }
+      .flex-basis-60 {
+        flex-basis: 60%;
+      }
+      .flex-basis-70 {
+        flex-basis: 70%;
+      }
+      .flex-basis-80 {
+        flex-basis: 80%;
+      }
+      .flex-basis-90 {
+        flex-basis: 90%;
+      }
+      .flex-basis-100 {
+        flex-basis: 100%;
+      }
+    }
+  }
+  
