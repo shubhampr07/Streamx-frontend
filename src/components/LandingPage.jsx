@@ -222,12 +222,12 @@ const LandingPage = () => {
                     StreamX is designed to grow with you.
                   </p>
                   <p>
-                    <a
+                    <Link
                       className="mt-4 button button--primary bg-primary-400"
-                      href="#"
+                      to="/stream"
                     >
                       Try Streamx
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
@@ -248,9 +248,9 @@ const LandingPage = () => {
           </h3>
 
           <div className="mt-8 flex items-center justify-center gap-x-6">
-            <a
+            <Link
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-              href="/stream"
+              to="/stream"
             >
               Explore Streamx
               <svg
@@ -265,7 +265,7 @@ const LandingPage = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
 
           <svg
