@@ -28,12 +28,12 @@ const LandingPage = () => {
             ></path>
           </svg>
         </a>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          We invest in the world’s potential
+        <h1 class="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          Elevate Your Streaming Experience with StreamX
         </h1>
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-          Here at Flowbite we focus on markets where technology, innovation, and
-          capital can unlock long-term value and drive economic growth.
+          "Powerful, Customizable, and Seamless – The Next-Level Streaming Tool
+          for Gamers, Creators, and Professionals"
         </p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
@@ -199,19 +199,22 @@ const LandingPage = () => {
               <div class="p-6 bg-grey">
                 <div class="leading-relaxed">
                   <h2 class="leading-tight text-4xl font-bold">
-                    CXcon: Experience Transformation
+                    Streamx: Experience Transformation
                   </h2>
                   <p class="mt-4">
-                    Our second CXcon in October was dedicated to experience
-                    transformation. The free one-day virtual event&nbsp;brought
-                    together 230+ heads of digital, thought leaders, and UX
-                    practitioners to discuss all aspects of experience design..
+                    StreamX brings you everything you need for flawless
+                    broadcasting, from high-performance video encoding to
+                    multi-platform streaming, custom layouts, and real-time
+                    analytics. You’re in control of every aspect of your stream,
+                    all from an intuitive and user-friendly interface.
                   </p>
                   <p class="mt-4">
-                    In a jam-packed day filled with keynote sessions, panels,
-                    and virtual networking we explored topics including design
-                    leadership, UX ethics, designing for emotion and innovation
-                    at scale.
+                    Whether you're live streaming your favorite games,
+                    conducting webinars, or building a creative studio, StreamX
+                    provides the flexibility, control, and performance to take
+                    your content to new heights. With built-in broadcasting
+                    tools, customizable layouts, and zero-latency streaming,
+                    StreamX is designed to grow with you.
                   </p>
                   <p>
                     <a
@@ -234,7 +237,9 @@ const LandingPage = () => {
           </h2>
 
           <h3 class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-500">
-            Sign up for exclusive access to events, resources, and more
+            Join our community of creators, streamers, and innovators who use
+            StreamX every day. Share your knowledge, ask questions, and grow
+            together.
           </h3>
 
           <div class="mt-8 flex items-center justify-center gap-x-6">
