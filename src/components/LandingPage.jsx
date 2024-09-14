@@ -186,7 +186,7 @@ const LandingPage = () => {
                     <div class="h-full">
                       <img
                         class="h-full object-cover"
-                        src="https://inviqa.com/sites/default/files/styles/pullout/public/2020-08/XD-1.jpeg?h=f75d236a&itok=PBoXPDmW"
+                        src="https://www.streamingvideoprovider.com/assets_dist/svp/media/obs-scenes/obs-scenes-825.png"
                         width="733"
                         height="412"
                         alt='""'
@@ -219,7 +219,7 @@ const LandingPage = () => {
                   <p>
                     <a
                       class="mt-4 button button--primary bg-primary-400"
-                      href="https://inviqa.com/cxcon-experience-transformation"
+                      href="#"
                     >
                       Try Streamx
                     </a>
